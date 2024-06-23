@@ -1,3 +1,11 @@
+# Question 4
+# Write a code that will:
+# 1. Contains a function `find_max_min(numbers_list)` that takes a list of numbers and returns both the maximum and minimum numbers in the list.
+# 2. Prompts the user to enter 5 numbers, stores them in a list, and then uses the `find_max_min` function to find and display the maximum and minimum numbers.
+
+
+
+
 def findMaxMin(numbers):
     return max(numbers),min(numbers)
 

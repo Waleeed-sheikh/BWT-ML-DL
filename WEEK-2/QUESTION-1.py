@@ -1,3 +1,11 @@
+# Question 1
+# Write a code that will:
+# 1. Prompt the user to enter their name, age, email, and favorite number.
+# 2. Stores these inputs in a dictionary with appropriate keys.
+# 3. Validate the email format (contains "@" and ".").
+# 4. Displays a message using these variables, formatted as: "Hello [name], you are [age] years old, your email is [email], and your favorite number is [favorite number]."
+
+
 def dataDisplay():   #First step was simple i just gathered the name , age ,email, and number and stored them in their respective variables.
     name = input("Enter your name: ")
     age = input("Enter your age: ")

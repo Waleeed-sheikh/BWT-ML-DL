@@ -1,3 +1,11 @@
+# Question 5
+# Write a code that will:
+# 1. Prompt the user to enter details of 3 students: name, age, and grade.
+# 2. Stores these details in a list of tuples, with each tuple containing the name, age, and grade of a student.
+# 3. Convert this list of tuples into a dictionary with the student name as the key and the tuple (age, grade) as the value.
+# 4. Displays an appropriate output.
+
+
 def dataDisplay():
    dataList=[]
    dataDictionary={}

@@ -1,3 +1,11 @@
+# Question 3
+# Write a function `convert_temperature(temp, scale)` that:
+# 1. Takes a temperature value and a scale ("C" for Celsius, "F" for Fahrenheit) as inputs.
+# 2. Converts the temperature to the other scale.
+# 3. Returns the converted temperature.
+# 4. Display the converted temperature.
+
+
 def convert_temperature(temp, scale):
     if scale == "Fahrenheit":
         converted_temp = (temp - 32) * 0.5556

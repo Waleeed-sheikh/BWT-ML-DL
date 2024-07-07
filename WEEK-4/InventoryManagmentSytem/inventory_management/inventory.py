@@ -1,6 +1,5 @@
-import csv
-from datetime import datetime
 from inventory_management.food_item import FoodItem
+from inventory_management.file_manager import save_to_csv, load_from_csv
 
 class Inventory:
     def __init__(self):
@@ -44,26 +43,7 @@ class Inventory:
         return near_expiry_items
 
     def save_to_csv(self, filename):
-        try:
-            with open(filename, mode='w', newline='') as file:
-                writer = csv.writer(file)
-                writer.writerow(['Name', 'Category', 'Quantity', 'Barcode', 'Expiry Date'])
-                for item in self.items:
-                    writer.writerow([item.name, item.category, item.quantity, item.barcode, item.expiry_date])
-            print(f"Inventory saved to {filename}")
-        except Exception as e:
-            print(f"Error saving to file: {e}")
+        save_to_csv(self, filename)
 
     def load_from_csv(self, filename):
-        try:
-            with open(filename, mode='r') as file:
-                reader = csv.DictReader(file)
-                self.items = []
-                for row in reader:
-                    item = FoodItem(row['Name'], row['Category'], int(row['Quantity']), row['Barcode'], datetime.strptime(row['Expiry Date'], '%Y-%m-%d').date())
-                    self.items.append(item)
-            print(f"Inventory loaded from {filename}")
-        except FileNotFoundError:
-            print(f"File {filename} not found.")
-        except Exception as e:
-            print(f"Error loading from file: {e}")
+        load_from_csv(self, filename)

@@ -1,0 +1,7 @@
+Added: Apple (Fruit), Quantity: 10, Barcode: 1234567890, Expiry Date: 2024-07-10
+Added: Milk (Dairy), Quantity: 5, Barcode: 0987654321, Expiry Date: 2024-07-05
+Edited: Apple (Fruit), Quantity: 15, Barcode: 1234567890, Expiry Date: 2024-07-10
+Deleted: Milk (Dairy), Quantity: 5, Barcode: 0987654321, Expiry Date: 2024-07-05
+Found: Apple (Fruit), Quantity: 15, Barcode: 1234567890, Expiry Date: 2024-07-10
+Near expiry items:
+Apple (Fruit), Quantity: 15, Barcode: 1234567890, Expiry Date: 2024-07-10

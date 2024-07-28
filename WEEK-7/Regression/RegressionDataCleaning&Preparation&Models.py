@@ -1,38 +1,3 @@
-# import pandas as pd
-# from sklearn.preprocessing import LabelEncoder, StandardScaler
-
-# # Load datasets
-# regression_df = pd.read_csv(r'C:\Users\DELL\Desktop\BWT-ML-DL\WEEK-6\Regression\pakwheels_used_cars.csv')
-
-# # There was a filenotfound error occuring when i just put the name of the usedcars data file in the path
-# #even though the file is in the same directory so i added the complete path
-
-# # Display the first few rows
-# print("\nRegression Dataset:")
-# print(regression_df.head())
-
-
-# #----------------------------------------Handle missing values--------------------------------------
-# # Identify missing values
-
-# print(regression_df.isnull().sum())
-# # Handle missing values
-# regression_df.fillna(regression_df.mean(), inplace=True)
-
-
-
-
-
-
-# # Convert categorical variables to numerical
-# label_encoder = LabelEncoder()
-
-# for column in regression_df.select_dtypes(include=['object']).columns:
-#     regression_df[column] = label_encoder.fit_transform(regression_df[column])
-# # Normalize/standardize numerical features
-
-# scaler = StandardScaler()
-# regression_df[regression_df.columns] = scaler.fit_transform(regression_df[regression_df.columns])
 
 
 
@@ -171,3 +136,16 @@ plt.xlabel('Models')
 plt.ylabel('Scores')
 plt.legend(loc='best')
 plt.show()
+
+
+
+#--------------------------------------------------Model Performance Comparison-------------------------------------------
+#Based on the Mean Squared Error (MSE) and R² Score, the Random Forest Regression model performs the best in this scenario.
+#Random Forest Regression has the lowest Mean Squared Error (0.494) and the highest R² Score (0.758), indicating that it predicts the car prices more accurately than the other models.
+#Linear Regression performs moderately well, but not as good as Random Forest.
+#Decision Tree Regression has the highest Mean Squared Error (1.107) and the lowest R² Score (0.448), making it the least accurate model among the three.
+
+#Details I have written in the Report.
+
+#Best Model: Random Forest Regression
+          
